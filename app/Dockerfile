@@ -1,6 +1,6 @@
 FROM python:3.6
 EXPOSE 8080
-
+RUN mkdir /app
 COPY requirements.txt /app
 WORKDIR /app
 
