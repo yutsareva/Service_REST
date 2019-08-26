@@ -5,7 +5,7 @@ from marshmallow import Schema, fields, validate, ValidationError
 from sqlalchemy.orm import relationship
 import datetime
 
-engine = create_engine('mysql+pymysql://user:secret123@db/mysql', echo=False)
+engine = create_engine('mysql+pymysql://user:secret123@db/mysql?charset=utf8mb4', echo=False)
 
 Base = declarative_base()
 metadata = Base.metadata
